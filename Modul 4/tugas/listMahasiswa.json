@@ -1,0 +1,18 @@
+{
+  "mahasiswa": [
+    {
+      "userId": 1,
+      "id": 1584017297795,
+      "nim": "1741720065",
+      "nama": "Alenovan Wiradhika Putra",
+      "alamat": "Batu",
+      "hp": "081334367717",
+      "angkatan": "2018",
+      "status": "aktif"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
