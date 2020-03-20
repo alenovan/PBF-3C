@@ -1,22 +1,22 @@
 import React, {
     Component
-} from "./node_modules/react";
+}  from 'react';
 import {
     connect
-} from "./node_modules/react-redux";
+} from  'react-redux';
 import {
     deleteTodo,
     toggleTodo,
     setVisibilityFilter
-} from "../actions/actionCreator";
+} from "../Actions/ActionCreator";
 import {
     SHOW_ALL,
     SHOW_COMPLETED,
     SHOW_ACTIVE
-} from "../actions/actionsTypes";
+} from "../Actions/ActionsTypes";
 import {
     bindActionCreators
-} from "./node_modules/redux";
+}  from 'redux';
 
 class Table extends Component {
     render() {
@@ -43,17 +43,18 @@ class Table extends Component {
                 todo.text
             } {
                 todo.completed === true ? "(completed)" : ""
-            } </td>                   <td>                     <span                       className="fas fa-minus-circle"                       onClick={() => this.props.deleteTodo(todo.id)}                       style={{                         color: "white",                         fontSize: "20pt",                         marginRight: "20px"                       }}                     / > <span className = "fas fa-check-circle"
+            } </td><td><span                       className="btn btn-danger fa-minus-circle"                       onClick={() => this.props.deleteTodo(todo.id)}                       style={{                         color: "white",                             marginRight: "20px"                       }}                      >Hapus</span><span className = "btn btn-success fa-check-circle"
             onClick = {
                 () => this.props.toggleTodo(todo.id)
             }
             style = {
                 {
                     color: "white",
-                    fontSize: "20pt"
+                    fontSize: "2    0pt"
                 }
             }
-            />                   </td > </tr>               ))}             </tbody > </table>         ) : (           <div             style={{ marginTop: "50px" }}             className="col-lg-10 col-md-10 col-xs-12 col-sm-12 offset-lg-1"           >             <div className="alert alert-danger" role="alert">               Todo List is empty or Filter results show no results             </div > </div>         )}{" "}       </div > );
+            
+            > Completed</span>                   </td > </tr>               ))}             </tbody > </table>         ) : (           <div             style={{ marginTop: "50px" }}             className="col-lg-10 col-md-10 col-xs-12 col-sm-12 offset-lg-1"           >             <div className="alert alert-danger" role="alert">               Todo List is empty or Filter results show no results             </div > </div>         )}{" "}       </div > );
     }
 }
 

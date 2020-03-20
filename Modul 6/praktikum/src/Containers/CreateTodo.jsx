@@ -1,7 +1,7 @@
-import React, { Component } from './node_modules/react'
-import { connect } from './node_modules/react-redux'
+import React, { Component }  from 'react';
+import { connect }  from 'react-redux'; 
 import { addTodo } from '../Actions/ActionCreator'
-import { bindActionCreators } from './node_modules/redux'
+import { bindActionCreators } from 'redux'
 
 class CreateTodo extends Component {
     constructor(props) {
