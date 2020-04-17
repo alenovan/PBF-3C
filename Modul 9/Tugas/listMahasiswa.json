@@ -1,0 +1,18 @@
+{
+  "mahasiswa": [
+    {
+      "userId": 1,
+      "id": 1586526350872,
+      "nim": "1741720065",
+      "nama": "novan",
+      "alamat": "batu",
+      "hp": "6281334367717",
+      "angkatan": "2017",
+      "status": "hmmm"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
